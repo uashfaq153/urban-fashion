@@ -100,7 +100,7 @@ const products=[
 {name:"Original Half White Boski 6 Pound",cat:"Boski Fabric",price:8000,tag:"ORIGINAL 6 POUND",desc:"Premium Half White Boski · Rs. 8,000"}
 ];
 let cart=[];
-function render(list=products){document.getElementById('products').innerHTML=list.map((p,i)=>`<article class="product"><div class="product-img"><img src="Half%20white%20Boski.jpeg" alt="Original Half White Boski" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">Rs. 8,000</div><button onclick="add(${products.indexOf(p)})">ADD TO BAG · PREVIEW</button></div></article>`).join('')}
+function render(list=products){document.getElementById('products').innerHTML=list.map((p,i)=>`<article class="product"><div class="product-img"><img src="Half%20White%20Boski.jpeg" alt="Original Half White Boski" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">Rs. 8,000</div><button onclick="add(${products.indexOf(p)})">ADD TO BAG · PREVIEW</button></div></article>`).join('')}
 function filterProducts(cat,btn){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render(cat==='All'?products:products.filter(p=>p.cat===cat))}
 function add(i){alert('This is a design preview. Add your real product and price before accepting orders.')}
 function toggleCart(){document.getElementById('cart').classList.toggle('open')}
