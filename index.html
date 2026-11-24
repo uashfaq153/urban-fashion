@@ -97,13 +97,10 @@ footer p{font:11px/1.8 Arial,sans-serif;color:var(--muted)}.footer-title{font:80
 </aside>
 <script>
 const products=[
-{name:"Original Boski 6 Pound Suit",cat:"Boski Fabric",price:0,tag:"BOSKI 6 POUND",desc:"Sample listing · Price to be added"},
-{name:"Premium Boski Unstitched Fabric",cat:"Boski Suits",price:0,tag:"ORIGINAL BOSKI",desc:"Sample listing · Price to be added"},
-{name:"Classic Boski Suit",cat:"Boski Collection",price:0,tag:"BOSKI FABRIC",desc:"Sample listing · Price to be added"},
-{name:"Premium Boski Collection",cat:"Boski Suits",price:0,tag:"PREMIUM BOSKI",desc:"Sample listing · Price to be added"}
+{name:"Original Half White Boski 6 Pound",cat:"Boski Fabric",price:8000,tag:"ORIGINAL 6 POUND",desc:"Premium Half White Boski · Rs. 8,000"}
 ];
 let cart=[];
-function render(list=products){document.getElementById('products').innerHTML=list.map((p,i)=>`<article class="product"><div class="product-img">${p.tag}<br><br>PRODUCT PHOTO TO BE ADDED</div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">Price coming soon</div><button onclick="add(${products.indexOf(p)})">ADD TO BAG · PREVIEW</button></div></article>`).join('')}
+function render(list=products){document.getElementById('products').innerHTML=list.map((p,i)=>`<article class="product"><div class="product-img"><img src="Half%20white%20Boski.jpeg" alt="Original Half White Boski" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">Rs. 8,000</div><button onclick="add(${products.indexOf(p)})">ADD TO BAG · PREVIEW</button></div></article>`).join('')}
 function filterProducts(cat,btn){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render(cat==='All'?products:products.filter(p=>p.cat===cat))}
 function add(i){alert('This is a design preview. Add your real product and price before accepting orders.')}
 function toggleCart(){document.getElementById('cart').classList.toggle('open')}
