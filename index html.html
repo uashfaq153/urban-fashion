@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URBAN FASHION | Traditional Men's Wear</title>
+<meta name="description" content="URBAN FASHION — Original Boski 6 Pound Quality — Pakistani men's fabric.">
+<style>
+:root{--black:#090909;--panel:#151515;--gold:#c6a15b;--gold2:#e2c27e;--cream:#f4efe5;--muted:#b9b2a5;--line:#39332a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.topbar{text-align:center;background:#bd9854;color:#090909;padding:8px 12px;font:11px Arial,sans-serif;letter-spacing:2px}
+header{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#090909;position:sticky;top:0;z-index:10}
+.logo{font:800 21px Arial,sans-serif;letter-spacing:3px;color:var(--cream)}.logo span{color:var(--gold)}
+nav{display:flex;gap:27px;align-items:center;font:11px Arial,sans-serif;letter-spacing:1.5px}nav a:hover{color:var(--gold)}
+.bag{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:10px 14px;cursor:pointer}
+.hero{min-height:570px;display:flex;align-items:center;padding:70px 8%;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.72) 48%,rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:600px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;font-weight:400;margin:22px 0}.hero p{font:15px/1.9 Arial,sans-serif;color:#d1c9bb;max-width:460px}
+.gold-btn{display:inline-block;background:var(--gold);color:#090909;padding:15px 25px;font: bold 11px Arial,sans-serif;letter-spacing:2px;border:0;cursor:pointer;margin-top:18px}
+.gold-btn:hover{background:var(--gold2)}
+section{padding:76px 7%}.center{text-align:center}.center .eyebrow{margin-bottom:13px}h2{font-size:38px;font-weight:400;margin:0 0 13px}.intro{font:13px/1.8 Arial,sans-serif;color:var(--muted);max-width:570px;margin:0 auto}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.cat{min-height:280px;position:relative;display:flex;align-items:end;padding:25px;background-size:cover;background-position:center;overflow:hidden;border:1px solid #3b3326}
+.cat:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),transparent 75%)}
+.cat div{position:relative}.cat h3{font-size:25px;font-weight:400;margin:0 0 7px}.cat p{font:10px Arial,sans-serif;letter-spacing:2px;color:var(--gold);margin:0}
+.shop{background:#111}
+.filters{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:28px 0}
+.filters button{background:transparent;color:var(--muted);border:1px solid var(--line);padding:10px 16px;font:10px Arial,sans-serif;letter-spacing:1px;cursor:pointer}
+.filters button.active,.filters button:hover{border-color:var(--gold);color:var(--gold)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{background:#191919;border:1px solid #302a21}
+.product-img{height:275px;background:linear-gradient(145deg,#29251f,#100f0d);display:flex;align-items:center;justify-content:center;text-align:center;color:#b99a62;font:11px Arial,sans-serif;letter-spacing:3px;padding:15px}
+.product-info{padding:17px}.product-info h3{font-size:17px;font-weight:400;margin:0 0 8px}.desc{font:11px Arial,sans-serif;color:var(--muted);margin-bottom:13px}.price{color:var(--gold);font:bold 14px Arial,sans-serif;margin-bottom:13px}
+.product-info button{width:100%;padding:12px;background:transparent;color:var(--gold);border:1px solid var(--gold);font:10px Arial,sans-serif;letter-spacing:1.5px;cursor:pointer}.product-info button:hover{background:var(--gold);color:#090909}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.story-art{min-height:360px;background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1000&q=85') center/cover;border:1px solid var(--line)}
+.story p{font:13px/2 Arial,sans-serif;color:var(--muted)}.story h2{margin-top:14px}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 7%;text-align:center}
+.promise strong{display:block;color:var(--gold);font-size:17px;font-weight:400;margin-bottom:8px}.promise span{font:10px Arial,sans-serif;color:var(--muted);letter-spacing:1px}
+footer{padding:45px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#050505;border-top:1px solid var(--line)}
+footer p{font:11px/1.8 Arial,sans-serif;color:var(--muted)}.footer-title{font:800 18px Arial,sans-serif;letter-spacing:2px}.footer-title span{color:var(--gold)}
+.cart-panel{position:fixed;right:0;top:0;width:min(390px,100%);height:100%;background:#111;border-left:1px solid var(--gold);z-index:20;padding:24px;transform:translateX(105%);transition:.25s;overflow:auto}.cart-panel.open{transform:translateX(0)}
+.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px}.cart-head h2{font-size:25px}.close{background:none;border:0;color:var(--cream);font-size:28px;cursor:pointer}
+.cart-row{display:flex;justify-content:space-between;gap:10px;padding:14px 0;border-bottom:1px solid var(--line);font:12px Arial,sans-serif}.cart-row button{background:none;border:0;color:var(--gold);cursor:pointer}
+.total{color:var(--gold);font: bold 16px Arial,sans-serif;margin:22px 0}.small{font:10px/1.7 Arial,sans-serif;color:var(--muted)}
+@media(max-width:850px){.products{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:1fr 1fr}.story{grid-template-columns:1fr}.story-art{min-height:280px}}
+@media(max-width:560px){header{padding:0 4%;height:66px}.logo{font-size:16px}nav{gap:8px}nav a{display:none}.hero{min-height:510px;padding:55px 7%}section{padding:55px 5%}.categories{grid-template-columns:1fr}.cat{min-height:230px}.products{gap:10px}.product-img{height:190px}.product-info{padding:12px}.product-info h3{font-size:15px}h2{font-size:31px}.promise{grid-template-columns:1fr;gap:24px}}
+</style>
+</head>
+<body>
+<div class="topbar">TIMELESS PAKISTANI STYLE · URBAN FASHION</div>
+<header>
+ <a class="logo" href="#home">URBAN <span>FASHION</span></a>
+ <nav><a href="#home">HOME</a><a href="#collections">COLLECTIONS</a><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><button class="bag" onclick="toggleCart()">BAG (<span id="count">0</span>)</button></nav>
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-content">
+ <div class="eyebrow">TRADITION, TAILORED FOR TODAY</div>
+ <h1>Elegance in<br><span style="color:var(--gold)">Every Thread.</span></h1>
+ <p>Discover timeless Pakistani menswear — refined shalwar kameez, classic suits and traditional essentials made for every occasion.</p>
+ <a class="gold-btn" href="#shop">EXPLORE THE COLLECTION</a>
+</div></section>
+<section id="collections">
+ <div class="center"><div class="eyebrow">CURATED FOR YOU</div><h2>Our Collections</h2><p class="intro">Original 6 Pound Boski quality, timeless Pakistani menswear and a refined black-and-gold look.</p></div>
+ <div class="categories">
+  <a class="cat" href="#shop" style="background-image:url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80')"><div><h3>Boski Fabric</h3><p>CLASSIC EVERYDAY WEAR</p></div></a>
+  <a class="cat" href="#shop" style="background-image:url('https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80')"><div><h3>Men's Boski Suits</h3><p>FORMAL & PREMIUM BOSKI</p></div></a>
+  <a class="cat" href="#shop" style="background-image:url('https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80')"><div><h3>Boski Collection</h3><p>THE FINISHING TOUCH</p></div></a>
+ </div>
+</section>
+<section class="shop" id="shop">
+ <div class="center"><div class="eyebrow">THE UMER EDIT</div><h2>Featured Pieces</h2><p class="intro">These are sample listings for the website preview. Replace them with your actual products, sizes and prices when your stock is ready.</p></div>
+ <div class="filters">
+  <button class="active" onclick="filterProducts('All',this)">ALL</button>
+  <button onclick="filterProducts('Boski Fabric',this)">SHALWAR KAMEEZ</button>
+  <button onclick="filterProducts('Boski Suits',this)">SUITS</button>
+  <button onclick="filterProducts('Boski Collection',this)">BOSKI FABRICS</button>
+ </div>
+ <div class="products" id="products"></div>
+</section>
+<div class="promise">
+ <div><strong>Timeless Design</strong><span>CLASSIC PAKISTANI STYLE</span></div>
+ <div><strong>Thoughtful Details</strong><span>QUALITY & COMFORT FIRST</span></div>
+ <div><strong>Made for Every Occasion</strong><span>EVERYDAY TO CELEBRATION</span></div>
+</div>
+<section class="story" id="story">
+ <div class="story-art"></div><div><div class="eyebrow">THE BRAND</div><h2>Tradition, with a modern touch.</h2><p>URBAN FASHION celebrates the confidence and character of Pakistani men's traditional clothing. Our vision is simple: bring together timeless designs, comfortable fits and thoughtful details.</p><p class="small">This is starter brand copy. You can personalize it with your own story once the business is ready.</p><a class="gold-btn" href="#shop">DISCOVER MORE</a></div>
+</section>
+<section id="contact" class="center" style="padding-top:25px"><div class="eyebrow">STAY CONNECTED</div><h2>Questions or orders?</h2><p class="intro">Your WhatsApp number and business email will be added here before the store goes live.</p></section>
+</main>
+<footer><div><div class="footer-title">URBAN <span>FASHION</span></div><p>Tradition, tailored for today.</p></div><div><strong style="color:var(--gold);font-weight:400">CUSTOMER CARE</strong><p>WhatsApp: Add your business number<br>Email: Add your store email<br>Delivery: Details coming soon</p></div><p>© 2026 URBAN FASHION<br>Starter website preview</p></footer>
+<aside class="cart-panel" id="cart">
+ <div class="cart-head"><h2>Your Bag</h2><button class="close" onclick="toggleCart()">×</button></div>
+ <div id="cartItems"></div><div class="total" id="total">Total: Rs. 0</div>
+ <button class="gold-btn" style="width:100%" onclick="checkout()">CONTINUE TO ORDER</button>
+ <p class="small">Preview only. Sample products and prices are not real offers. A working checkout, delivery settings and contact number must be configured before launch.</p>
+</aside>
+<script>
+const products=[
+{name:"Original Boski 6 Pound Suit",cat:"Boski Fabric",price:0,tag:"BOSKI 6 POUND",desc:"Sample listing · Price to be added"},
+{name:"Premium Boski Unstitched Fabric",cat:"Boski Suits",price:0,tag:"ORIGINAL BOSKI",desc:"Sample listing · Price to be added"},
+{name:"Classic Boski Suit",cat:"Boski Collection",price:0,tag:"BOSKI FABRIC",desc:"Sample listing · Price to be added"},
+{name:"Premium Boski Collection",cat:"Boski Suits",price:0,tag:"PREMIUM BOSKI",desc:"Sample listing · Price to be added"}
+];
+let cart=[];
+function render(list=products){document.getElementById('products').innerHTML=list.map((p,i)=>`<article class="product"><div class="product-img">${p.tag}<br><br>PRODUCT PHOTO TO BE ADDED</div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">Price coming soon</div><button onclick="add(${products.indexOf(p)})">ADD TO BAG · PREVIEW</button></div></article>`).join('')}
+function filterProducts(cat,btn){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render(cat==='All'?products:products.filter(p=>p.cat===cat))}
+function add(i){alert('This is a design preview. Add your real product and price before accepting orders.')}
+function toggleCart(){document.getElementById('cart').classList.toggle('open')}
+function checkout(){alert('Checkout will be activated after adding products, prices, delivery and your business contact details.')}
+render();
+</script>
+</body>
+</html>
