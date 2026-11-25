@@ -39,10 +39,7 @@ section{padding:76px 7%}.center{text-align:center}.center .eyebrow{margin-bottom
 .promise strong{display:block;color:var(--gold);font-size:17px;font-weight:400;margin-bottom:8px}.promise span{font:10px Arial,sans-serif;color:var(--muted);letter-spacing:1px}
 footer{padding:45px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#050505;border-top:1px solid var(--line)}
 footer p{font:11px/1.8 Arial,sans-serif;color:var(--muted)}.footer-title{font:800 18px Arial,sans-serif;letter-spacing:2px}.footer-title span{color:var(--gold)}
-.cart-panel{position:fixed;right:0;top:0;width:min(390px,100%);height:100%;background:#111;border-left:1px solid var(--gold);z-index:20;padding:24px;transform:translateX(105%);transition:.25s;overflow:auto}.cart-panel.open{transform:translateX(0)}
-.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px}.cart-head h2{font-size:25px}.close{background:none;border:0;color:var(--cream);font-size:28px;cursor:pointer}
-.cart-row{display:flex;justify-content:space-between;gap:10px;padding:14px 0;border-bottom:1px solid var(--line);font:12px Arial,sans-serif}.cart-row button{background:none;border:0;color:var(--gold);cursor:pointer}
-.total{color:var(--gold);font: bold 16px Arial,sans-serif;margin:22px 0}.small{font:10px/1.7 Arial,sans-serif;color:var(--muted)}
+.small{font:10px/1.7 Arial,sans-serif;color:var(--muted)}
 @media(max-width:850px){.products{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:1fr 1fr}.story{grid-template-columns:1fr}.story-art{min-height:280px}}
 @media(max-width:560px){header{padding:0 4%;height:66px}.logo{font-size:16px}nav{gap:8px}nav a{display:none}.hero{min-height:510px;padding:55px 7%}section{padding:55px 5%}.categories{grid-template-columns:1fr}.cat{min-height:230px}.products{gap:10px}.product-img{height:190px}.product-info{padding:12px}.product-info h3{font-size:15px}h2{font-size:31px}.promise{grid-template-columns:1fr;gap:24px}}
 </style>
@@ -54,63 +51,3 @@ footer p{font:11px/1.8 Arial,sans-serif;color:var(--muted)}.footer-title{font:80
  <nav><a href="#home">HOME</a><a href="#collections">COLLECTIONS</a><a href="#shop">SHOP</a><a href="#story">OUR STORY</a></nav>
 </header>
 <main>
-<section class="hero" id="home"><div class="hero-content">
- <div class="eyebrow">TRADITION, TAILORED FOR TODAY</div>
- <h1>Elegance in<br><span style="color:var(--gold)">Every Thread.</span></h1>
- <p>Discover timeless Pakistani menswear — refined shalwar kameez, classic suits and traditional essentials made for every occasion.</p>
- <a class="gold-btn" href="#shop">EXPLORE THE COLLECTION</a>
-</div></section>
-<section id="collections">
- <div class="center"><div class="eyebrow">CURATED FOR YOU</div><h2>Our Collections</h2><p class="intro">Original 6 Pound Boski quality, timeless Pakistani menswear and a refined black-and-gold look.</p></div>
- <div class="categories">
-  <a class="cat" href="#shop" style="background-image:url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80')"><div><h3>Boski Fabric</h3><p>CLASSIC EVERYDAY WEAR</p></div></a>
-  <a class="cat" href="#shop" style="background-image:url('https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=900&q=80')"><div><h3>Men's Boski Suits</h3><p>FORMAL & PREMIUM BOSKI</p></div></a>
-  <a class="cat" href="#shop" style="background-image:url('https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80')"><div><h3>Boski Collection</h3><p>THE FINISHING TOUCH</p></div></a>
- </div>
-</section>
-<section class="shop" id="shop">
-<div class="center"><div class="eyebrow">URBAN FASHION COLLECTION</div><h2>Original Boski Fabric</h2><p class="intro">Discover premium quality Boski fabric at URBAN FASHION. Elegant style, superior quality and timeless Pakistani tradition.</p></div>
- <div class="filters">
-  <button class="active" onclick="filterProducts('All',this)">ALL PRODUCTS</button>
- </div>
- <div class="products" id="products"></div>
-</section>
-<div class="promise">
- <div><strong>Timeless Design</strong><span>CLASSIC PAKISTANI STYLE</span></div>
- <div><strong>Thoughtful Details</strong><span>QUALITY & COMFORT FIRST</span></div>
- <div><strong>Made for Every Occasion</strong><span>EVERYDAY TO CELEBRATION</span></div>
-</div>
-<section class="story" id="story">
- <div class="story-art"></div><div><div class="eyebrow">THE BRAND</div><h2>Tradition, with a modern touch.</h2><p>URBAN FASHION celebrates the confidence and character of Pakistani men's traditional clothing. Our vision is simple: bring together timeless designs, comfortable fits and thoughtful details.</p><p class="small">This is starter brand copy. You can personalize it with your own story once the business is ready.</p><a class="gold-btn" href="#shop">DISCOVER MORE</a></div>
-</section>
-<section id="contact" class="center" style="padding-top:25px"><div class="eyebrow">STAY CONNECTED</div><h2>Questions or orders?</h2><p class="intro">Your WhatsApp number and business email will be added here before the store goes live.</p></section>
-</main>
-<footer><div><div class="footer-title">URBAN <span>FASHION</span></div><p>Tradition, tailored for today.</p></div><div><strong style="color:var(--gold);font-weight:400">CUSTOMER CARE</strong><p>WhatsApp: Add your business number<br>Email: Add your store email<br>Delivery: Details coming soon</p></div><p>© 2026 URBAN FASHION<br>Starter website preview</p></footer>
-<aside class="cart-panel" id="cart">
- <div class="cart-head"><h2>Your Bag</h2><button class="close" onclick="toggleCart()">×</button></div>
- <div id="cartItems"></div><div class="total" id="total">Total: Rs. 0</div>
- <button class="gold-btn" style="width:100%" onclick="checkout()">CONTINUE TO ORDER</button>
- <p class="small">Preview only. Sample products and prices are not real offers. A working checkout, delivery settings and contact number must be configured before launch.</p>
-</aside>
-<script>
-const products=[
-{name:"Original Half White Boski 6 Pound",cat:"Boski Fabric",price:8000,tag:"ORIGINAL 6 POUND",desc:"Premium Half White Boski · Rs. 8,000"}
-];
-let cart=[];
-function render(list=products){document.getElementById('products').innerHTML=list.map((p,i)=>`<article class="product"><div class="product-img"><img src="Half%20White%20Boski.jpeg" alt="Original Half White Boski" style="width:100%;height:100%;object-fit:cover;"></div><div class="product-info"><h3>${p.name}</h3><div class="desc">${p.desc}<br>Delivery Charges: Separate</div><div class="price">Rs. 8,000</div><a href="https://wa.me/923396036746?text=I%20want%20to%20order%20Original%20Half%20White%20Boski%20for%20Rs.%208000" target="_blank" style="display:inline-block;background:#D4AF37;color:#000;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;">ORDER ON WHATSAPP</a></div></article>`).join('')}
-function filterProducts(cat,btn){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render(cat==='All'?products:products.filter(p=>p.cat===cat))}
-function add(i){alert('This is a design preview. Add your real product and price before accepting orders.')}
-function toggleCart(){document.getElementById('cart').classList.toggle('open')}
-function checkout(){alert('Checkout will be activated after adding products, prices, delivery and your business contact details.')}
-render();
-</script>
-<a href="https://wa.me/923396036746?text=I%20want%20to%20order%20Original%20Boski" target="_blank" style="display:inline-block;background:#D4AF37;color:#000;padding:14px 25px;border-radius:8px;text-decoration:none;font-weight:bold;">Order Now on WhatsApp</a>
-<section style="background:#111;color:white;text-align:center;padding:35px 20px;margin-top:40px;">
-<h2 style="color:#D4AF37;">CONTACT URBAN FASHION</h2>
-<p>For orders, product details and any queries, contact us on WhatsApp.</p>
-<a href="https://wa.me/923396036746" target="_blank" style="display:inline-block;background:#D4AF37;color:#000;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">CHAT WITH US</a>
-<p>WhatsApp: 0339 6036746</p>
-<p style="margin-top:20px;">URBAN FASHION | Quality You Deserve</p>
-</section>
-</body>
-</html>
