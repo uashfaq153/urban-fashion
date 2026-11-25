@@ -2,52 +2,93 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>URBAN FASHION | Traditional Men's Wear</title>
-<meta name="description" content="URBAN FASHION — Original Boski 6 Pound Quality — Pakistani men's fabric.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URBAN FASHION | Men's Wear</title>
+<meta name="description" content="URBAN FASHION - Premium Pakistani men's fabric.">
 <style>
-:root{--black:#090909;--panel:#151515;--gold:#c6a15b;--gold2:#e2c27e;--cream:#f4efe5;--muted:#b9b2a5;--line:#39332a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
-a{color:inherit;text-decoration:none}button{font:inherit}
-.topbar{text-align:center;background:#bd9854;color:#090909;padding:8px 12px;font:11px Arial,sans-serif;letter-spacing:2px}
-header{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#090909;position:sticky;top:0;z-index:10}
-.logo{font:800 21px Arial,sans-serif;letter-spacing:3px;color:var(--cream)}.logo span{color:var(--gold)}
-nav{display:flex;gap:27px;align-items:center;font:11px Arial,sans-serif;letter-spacing:1.5px}nav a:hover{color:var(--gold)}
-.bag{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:10px 14px;cursor:pointer}
-.hero{min-height:570px;display:flex;align-items:center;padding:70px 8%;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.72) 48%,rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1800&q=85') center/cover}
-.hero-content{max-width:600px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
-h1{font-size:clamp(44px,7vw,78px);line-height:1.02;font-weight:400;margin:22px 0}.hero p{font:15px/1.9 Arial,sans-serif;color:#d1c9bb;max-width:460px}
-.gold-btn{display:inline-block;background:var(--gold);color:#090909;padding:15px 25px;font: bold 11px Arial,sans-serif;letter-spacing:2px;border:0;cursor:pointer;margin-top:18px}
-.gold-btn:hover{background:var(--gold2)}
-section{padding:76px 7%}.center{text-align:center}.center .eyebrow{margin-bottom:13px}h2{font-size:38px;font-weight:400;margin:0 0 13px}.intro{font:13px/1.8 Arial,sans-serif;color:var(--muted);max-width:570px;margin:0 auto}
-.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
-.cat{min-height:280px;position:relative;display:flex;align-items:end;padding:25px;background-size:cover;background-position:center;overflow:hidden;border:1px solid #3b3326}
-.cat:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),transparent 75%)}
-.cat div{position:relative}.cat h3{font-size:25px;font-weight:400;margin:0 0 7px}.cat p{font:10px Arial,sans-serif;letter-spacing:2px;color:var(--gold);margin:0}
-.shop{background:#111}
-.filters{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:28px 0}
-.filters button{background:transparent;color:var(--muted);border:1px solid var(--line);padding:10px 16px;font:10px Arial,sans-serif;letter-spacing:1px;cursor:pointer}
-.filters button.active,.filters button:hover{border-color:var(--gold);color:var(--gold)}
-.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product{background:#191919;border:1px solid #302a21}
-.product-img{height:275px;background:linear-gradient(145deg,#29251f,#100f0d);display:flex;align-items:center;justify-content:center;text-align:center;color:#b99a62;font:11px Arial,sans-serif;letter-spacing:3px;padding:15px}
-.product-info{padding:17px}.product-info h3{font-size:17px;font-weight:400;margin:0 0 8px}.desc{font:11px Arial,sans-serif;color:var(--muted);margin-bottom:13px}.price{color:var(--gold);font:bold 14px Arial,sans-serif;margin-bottom:13px}
-.product-info button{width:100%;padding:12px;background:transparent;color:var(--gold);border:1px solid var(--gold);font:10px Arial,sans-serif;letter-spacing:1.5px;cursor:pointer}.product-info button:hover{background:var(--gold);color:#090909}
-.story{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.story-art{min-height:360px;background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1000&q=85') center/cover;border:1px solid var(--line)}
-.story p{font:13px/2 Arial,sans-serif;color:var(--muted)}.story h2{margin-top:14px}
-.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 7%;text-align:center}
-.promise strong{display:block;color:var(--gold);font-size:17px;font-weight:400;margin-bottom:8px}.promise span{font:10px Arial,sans-serif;color:var(--muted);letter-spacing:1px}
-footer{padding:45px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:#050505;border-top:1px solid var(--line)}
-footer p{font:11px/1.8 Arial,sans-serif;color:var(--muted)}.footer-title{font:800 18px Arial,sans-serif;letter-spacing:2px}.footer-title span{color:var(--gold)}
-.small{font:10px/1.7 Arial,sans-serif;color:var(--muted)}
-@media(max-width:850px){.products{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:1fr 1fr}.story{grid-template-columns:1fr}.story-art{min-height:280px}}
-@media(max-width:560px){header{padding:0 4%;height:66px}.logo{font-size:16px}nav{gap:8px}nav a{display:none}.hero{min-height:510px;padding:55px 7%}section{padding:55px 5%}.categories{grid-template-columns:1fr}.cat{min-height:230px}.products{gap:10px}.product-img{height:190px}.product-info{padding:12px}.product-info h3{font-size:15px}h2{font-size:31px}.promise{grid-template-columns:1fr;gap:24px}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#090909;color:#fff;line-height:1.6}
+header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333}
+.logo{font-size:25px;font-weight:bold;color:#d6b66b;letter-spacing:2px}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{text-align:center;padding:85px 20px;background:linear-gradient(#0009,#000c),#242019}
+.eyebrow{color:#d6b66b;letter-spacing:3px;font-size:12px}
+h1{font-size:48px;margin:15px 0}
+.hero p{color:#ccc;margin-bottom:25px}
+.btn{display:inline-block;background:#d6b66b;color:#090909;padding:13px 25px;text-decoration:none;font-weight:bold;border-radius:3px}
+section{padding:65px 7%;text-align:center}
+h2{font-size:30px;margin:10px 0 25px}
+.product{max-width:390px;margin:30px auto;background:#151515;border:1px solid #3c3424;padding:18px;border-radius:5px}
+.product img{width:100%;height:340px;object-fit:cover;background:#222}
+.product h3{margin:17px 0 5px;font-size:22px}
+.price{color:#d6b66b;font-size:23px;font-weight:bold;margin:10px}
+.description{color:#bbb;margin:10px 0 20px}
+.story{background:#141414}
+.story p,.contact p{max-width:650px;margin:12px auto;color:#ccc}
+.contact a{color:#d6b66b}
+footer{text-align:center;padding:25px;border-top:1px solid #333;color:#aaa;font-size:13px}
+.float{position:fixed;right:18px;bottom:18px;background:#25d366;color:white;text-decoration:none;padding:13px 18px;border-radius:30px;font-weight:bold}
+@media(max-width:600px){
+header{flex-direction:column;gap:12px}
+nav a{margin:0 7px}
+h1{font-size:35px}
+.hero{padding:65px 15px}
+.product img{height:280px}
+}
 </style>
 </head>
 <body>
-<div class="topbar">TIMELESS PAKISTANI STYLE · URBAN FASHION</div>
+
 <header>
- <a class="logo" href="#home">URBAN <span>FASHION</span></a>
- <nav><a href="#home">HOME</a><a href="#collections">COLLECTIONS</a><a href="#shop">SHOP</a><a href="#story">OUR STORY</a></nav>
+<div class="logo">URBAN FASHION</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#shop">Shop</a>
+<a href="#story">Our Story</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
+
 <main>
+<section class="hero" id="home">
+<div class="eyebrow">PREMIUM MEN'S COLLECTION</div>
+<h1>Style That Defines You</h1>
+<p>Discover premium quality traditional men's fabric.</p>
+<a class="btn" href="#shop">EXPLORE COLLECTION</a>
+</section>
+
+<section id="shop">
+<div class="eyebrow">URBAN FASHION COLLECTION</div>
+<h2>Our Collection</h2>
+<div class="product">
+<img src="Half%20White%20Boski.jpeg" alt="Original Half White Boski Fabric">
+<h3>Original Half White Boski</h3>
+<p class="description">Premium 6 Pound Quality</p>
+<div class="price">Rs. 8,000</div>
+<a class="btn" href="https://wa.me/923396036746?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20order%20Original%20Half%20White%20Boski%206%20Pound%20for%20Rs.%208000.">ORDER ON WHATSAPP</a>
+</div>
+</section>
+
+<section class="story" id="story">
+<div class="eyebrow">ABOUT US</div>
+<h2>Our Story</h2>
+<p>Welcome to URBAN FASHION. We bring you premium quality traditional men's fabric with style, quality and elegance.</p>
+</section>
+
+<section class="contact" id="contact">
+<div class="eyebrow">CONTACT URBAN FASHION</div>
+<h2>Questions or Orders?</h2>
+<p>For orders and product details, contact us directly on WhatsApp.</p>
+<p>WhatsApp: <a href="https://wa.me/923396036746">0339 6036746</a></p>
+<a class="btn" href="https://wa.me/923396036746">CHAT WITH US</a>
+</section>
+</main>
+
+<footer>
+<p>© 2026 URBAN FASHION. All Rights Reserved.</p>
+</footer>
+
+<a class="float" href="https://wa.me/923396036746">WhatsApp</a>
+
+</body>
+</html>
